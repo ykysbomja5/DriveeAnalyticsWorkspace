@@ -1,0 +1,49 @@
+<svg width="1280" height="760" viewBox="0 0 1280 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="760" rx="28" fill="#EEF4F8"/>
+  <rect x="32" y="32" width="1216" height="696" rx="28" fill="#FFFFFF"/>
+  <rect x="32" y="32" width="242" height="696" rx="28" fill="#102A43"/>
+  <text x="76" y="94" fill="#D6FF3F" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800">Drivee</text>
+  <text x="76" y="121" fill="#D4DEE8" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="600">Рабочее пространство аналитики</text>
+
+  <rect x="68" y="176" width="170" height="44" rx="18" fill="#17364C"/>
+  <text x="98" y="203" fill="#F0F5FA" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">Словарь</text>
+  <rect x="68" y="230" width="170" height="44" rx="18" fill="#17364C"/>
+  <text x="98" y="257" fill="#F0F5FA" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">Шаблоны</text>
+  <rect x="68" y="284" width="170" height="44" rx="18" fill="#D6FF3F"/>
+  <text x="98" y="311" fill="#09161A" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="800">Отчеты</text>
+
+  <text x="314" y="94" fill="#102A43" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="800">Панель бизнес-запросов</text>
+  <text x="314" y="126" fill="#6B7C93" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="500">Интерпретация, объяснимость, результат и визуализация в одном рабочем пространстве</text>
+
+  <rect x="314" y="168" width="428" height="244" rx="26" fill="#F7FAFC" stroke="#D9E2EC"/>
+  <text x="344" y="209" fill="#102A43" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800">Запрос</text>
+  <rect x="344" y="231" width="368" height="110" rx="20" fill="#FFFFFF" stroke="#CBD5E0"/>
+  <text x="365" y="271" fill="#486581" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="600">Покажи выручку по городам за последние 30 дней</text>
+  <rect x="344" y="360" width="146" height="38" rx="19" fill="#D6FF3F"/>
+  <text x="417" y="384" text-anchor="middle" fill="#09161A" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="800">Понять запрос</text>
+  <rect x="503" y="360" width="156" height="38" rx="19" fill="#102A43"/>
+  <text x="581" y="384" text-anchor="middle" fill="#F5FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700">Показать результат</text>
+
+  <rect x="770" y="168" width="446" height="244" rx="26" fill="#102A43"/>
+  <text x="802" y="209" fill="#D6FF3F" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800">Интерпретация</text>
+  <rect x="802" y="230" width="382" height="58" rx="18" fill="#17364C"/>
+  <text x="825" y="265" fill="#F0F5FA" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Выручка за последние 30 дней, сгруппировано по городам</text>
+  <text x="804" y="324" fill="#D4DEE8" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600">Метрика: выручка</text>
+  <text x="804" y="350" fill="#D4DEE8" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600">Группировка: город</text>
+  <text x="804" y="376" fill="#D4DEE8" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600">Уверенность: высокая</text>
+
+  <rect x="314" y="440" width="902" height="248" rx="26" fill="#F7FAFC" stroke="#D9E2EC"/>
+  <text x="344" y="482" fill="#102A43" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800">Результат и визуализация</text>
+
+  <rect x="344" y="507" width="376" height="144" rx="20" fill="#FFFFFF" stroke="#CBD5E0"/>
+  <text x="368" y="537" fill="#102A43" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">Главный вывод</text>
+  <text x="368" y="568" fill="#486581" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600">Москва и Казань дают максимальную выручку</text>
+  <text x="368" y="594" fill="#486581" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600">за последние 30 дней, а недельный тренд растущий.</text>
+
+  <rect x="744" y="507" width="442" height="144" rx="20" fill="#FFFFFF" stroke="#CBD5E0"/>
+  <text x="769" y="537" fill="#102A43" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">График</text>
+  <path d="M782 617L828 590L873 602L925 551L975 566L1028 529L1082 544L1148 499" stroke="#0B5C53" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="925" cy="551" r="6" fill="#D6FF3F"/>
+  <circle cx="1028" cy="529" r="6" fill="#D6FF3F"/>
+  <circle cx="1148" cy="499" r="6" fill="#D6FF3F"/>
+</svg>

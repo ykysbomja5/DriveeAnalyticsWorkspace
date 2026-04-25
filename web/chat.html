@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drivee Chats</title>
+    <link rel="stylesheet" href="/styles.css?v=20260423d" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a href="/" class="brand-panel brand-link"><img src="/Logomain.svg?v=20260423b" alt="Drivee" class="brand-logo" /></a>
+        <nav class="sidebar-nav">
+          <a href="/" class="nav-item">Главная</a>
+          <a href="/templates.html" class="nav-item">Шаблоны</a>
+          <a href="/reports.html" class="nav-item">Отчеты</a>
+          <a href="/chat.html" class="nav-item active">Чаты</a>
+        </nav>
+      </aside>
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="section-kicker">Комнаты</p>
+            <h1>Чаты с отчетами и шаблонами</h1>
+          </div>
+          <button class="primary" id="new-room-button">Новый чат</button>
+        </header>
+        <section class="chat-layout">
+          <aside class="panel chat-rooms">
+            <div id="room-list" class="chat-list"></div>
+          </aside>
+          <section class="panel chat-panel">
+            <div class="chat-head">
+              <strong id="active-room-title">Выберите чат</strong>
+              <button class="mini-button" id="add-members-button" type="button">Добавить коллег</button>
+            </div>
+            <div id="message-list" class="message-list"></div>
+            <div id="asset-picker" class="asset-picker hidden"></div>
+            <form id="message-form" class="message-form">
+              <button class="mini-button" id="asset-button" type="button">+</button>
+              <input id="message-input" type="text" placeholder="Сообщение" autocomplete="off" />
+              <button class="primary" type="submit">Отправить</button>
+            </form>
+            <div class="response-banner" id="chat-status">Realtime подключится после выбора комнаты.</div>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <div class="dialog-backdrop hidden" id="room-dialog" role="dialog" aria-modal="true" aria-labelledby="room-dialog-title">
+      <form class="dialog-panel room-form" id="room-form">
+        <div class="dialog-head">
+          <div>
+            <p class="section-kicker" id="room-dialog-kicker">Комната</p>
+            <h2 id="room-dialog-title">Новый чат</h2>
+          </div>
+          <button class="icon-button" type="button" id="room-dialog-close" aria-label="Закрыть">×</button>
+        </div>
+
+        <div id="room-title-field">
+          <label class="field-label" for="room-title-input">Название чата</label>
+          <input id="room-title-input" type="text" placeholder="Например: Отчет по городам" autocomplete="off" />
+        </div>
+
+        <div class="member-picker">
+          <div class="member-picker-head">
+            <label class="field-label" for="member-search-input">Коллеги</label>
+            <span id="member-selected-count">0 выбрано</span>
+          </div>
+          <input id="member-search-input" type="search" placeholder="Поиск по имени, email или отделу" autocomplete="off" />
+          <div class="member-list" id="member-list"></div>
+        </div>
+
+        <div class="dialog-actions">
+          <button class="ghost" type="button" id="room-dialog-cancel">Отмена</button>
+          <button class="primary" type="submit" id="room-dialog-submit">Создать чат</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="/auth-guard.js" defer></script>
+    <script src="/chat.js" defer></script>
+  </body>
+</html>

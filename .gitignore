@@ -1,0 +1,26 @@
+# Secrets
+.env
+
+# Local build artifacts
+.bin/
+*.exe
+*.test
+*.out
+
+# Go cache
+.gocache/
+
+# Local infrastructure and runtime files
+.local-pg/
+.local-pg17/
+.runlogs/
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+
+# Accidental local backups
+*.tmp
+*.bak
+*.orig
+cmd/auth/main.go.1792394006330383060

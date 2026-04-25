@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drivee Login</title>
+    <link rel="stylesheet" href="/styles.css?v=20260423c" />
+  </head>
+  <body class="auth-page">
+    <main class="auth-layout">
+      <section class="auth-panel">
+        <img src="/Logomain.svg?v=20260423b" alt="Drivee" class="auth-logo" />
+        <div class="auth-tabs">
+          <button class="active" type="button" data-auth-tab="login">Вход</button>
+          <button type="button" data-auth-tab="register">Регистрация</button>
+        </div>
+        <form id="login-form" class="auth-form">
+          <input id="login-email" type="email" placeholder="Почта" autocomplete="email" required />
+          <input id="login-password" type="password" placeholder="Пароль" autocomplete="current-password" required />
+          <button class="primary" type="submit">Войти</button>
+        </form>
+        <form id="register-form" class="auth-form hidden">
+          <input id="register-name" type="text" placeholder="ФИО" autocomplete="name" required />
+          <input id="register-email" type="email" placeholder="Почта" autocomplete="email" required />
+          <input id="register-department" type="text" placeholder="Отдел" />
+          <input id="register-password" type="password" placeholder="Пароль" autocomplete="new-password" required />
+          <button class="primary" type="submit">Создать аккаунт</button>
+        </form>
+        <div class="response-banner" id="auth-status">Для первого входа root: root@drivee.local / ChangeMe123!</div>
+      </section>
+    </main>
+    <script src="/login.js" defer></script>
+  </body>
+</html>

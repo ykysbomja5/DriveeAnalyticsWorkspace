@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drivee Profile</title>
+    <link rel="stylesheet" href="/styles.css?v=20260423c" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a href="/" class="brand-panel brand-link"><img src="/Logomain.svg?v=20260423b" alt="Drivee" class="brand-logo" /></a>
+        <nav class="sidebar-nav">
+          <a href="/" class="nav-item">Главная</a>
+          <a href="/chat.html" class="nav-item">Чаты</a>
+          <a href="/profile.html" class="nav-item active">Кабинет</a>
+        </nav>
+      </aside>
+      <main class="main-content">
+        <header class="topbar"><div><p class="section-kicker">Профиль</p><h1>Личный кабинет</h1></div></header>
+        <section class="results-layout lower">
+          <article class="panel profile-card" id="profile-card"></article>
+        </section>
+      </main>
+    </div>
+    <script src="/auth-guard.js" defer></script>
+    <script src="/profile.js" defer></script>
+  </body>
+</html>

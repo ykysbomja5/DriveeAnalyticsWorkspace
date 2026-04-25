@@ -1,0 +1,64 @@
+<svg width="1280" height="760" viewBox="0 0 1280 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="760" rx="28" fill="#F4F8FB"/>
+  <text x="68" y="88" fill="#102A43" font-family="Segoe UI, Arial, sans-serif" font-size="38" font-weight="800">Обзор архитектуры</text>
+  <text x="68" y="124" fill="#486581" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="500">Микросервисы для защищённой аналитики, объяснимости, отчётности и совместной работы</text>
+
+  <rect x="68" y="180" width="216" height="112" rx="24" fill="#102A43"/>
+  <text x="100" y="225" fill="#D6FF3F" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">Браузер / Frontend</text>
+  <text x="100" y="257" fill="#E3EDF7" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600">HTML, CSS, Vanilla JS</text>
+
+  <rect x="352" y="180" width="214" height="112" rx="24" fill="#0B5C53"/>
+  <text x="383" y="225" fill="#D6FF3F" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">Gateway</text>
+  <text x="383" y="257" fill="#E5FFFB" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600">Статический хостинг + auth proxy</text>
+
+  <rect x="648" y="162" width="230" height="96" rx="22" fill="#FFFFFF" stroke="#C9D6E2"/>
+  <text x="680" y="202" fill="#102A43" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800">Auth</text>
+  <text x="680" y="230" fill="#486581" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600">Пользователи, сессии, роли</text>
+
+  <rect x="648" y="278" width="230" height="96" rx="22" fill="#FFFFFF" stroke="#C9D6E2"/>
+  <text x="680" y="318" fill="#102A43" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800">Query</text>
+  <text x="680" y="346" fill="#486581" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600">Оркестрация intent + выполнение SQL</text>
+
+  <rect x="914" y="134" width="286" height="88" rx="22" fill="#FFFFFF" stroke="#C9D6E2"/>
+  <text x="944" y="171" fill="#102A43" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800">Meta</text>
+  <text x="944" y="198" fill="#486581" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600">Semantic layer, glossary, термины</text>
+
+  <rect x="914" y="244" width="286" height="88" rx="22" fill="#FFFFFF" stroke="#C9D6E2"/>
+  <text x="944" y="281" fill="#102A43" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800">LLM</text>
+  <text x="944" y="308" fill="#486581" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600">Qwen + guardrails</text>
+
+  <rect x="914" y="354" width="286" height="88" rx="22" fill="#FFFFFF" stroke="#C9D6E2"/>
+  <text x="944" y="391" fill="#102A43" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800">Reports</text>
+  <text x="944" y="418" fill="#486581" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600">Архив, шаблоны, расписание, экспорт</text>
+
+  <rect x="914" y="464" width="286" height="88" rx="22" fill="#FFFFFF" stroke="#C9D6E2"/>
+  <text x="944" y="501" fill="#102A43" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800">Chat</text>
+  <text x="944" y="528" fill="#486581" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600">Комнаты, SSE-события, обмен отчётами</text>
+
+  <rect x="650" y="530" width="548" height="154" rx="28" fill="#102A43"/>
+  <text x="682" y="578" fill="#D6FF3F" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="800">PostgreSQL</text>
+  <text x="682" y="612" fill="#E4EDF7" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="600">схема analytics</text>
+  <text x="682" y="639" fill="#C8D4E3" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="500">Сырой источник + аналитические представления</text>
+  <text x="939" y="612" fill="#E4EDF7" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="600">схема app</text>
+  <text x="939" y="639" fill="#C8D4E3" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="500">Пользователи, отчёты, логи, шаблоны, чат</text>
+  <rect x="679" y="585" width="214" height="70" rx="18" fill="#17364C"/>
+  <rect x="936" y="585" width="214" height="70" rx="18" fill="#17364C"/>
+
+  <path d="M284 236H352" stroke="#0B5C53" stroke-width="6" stroke-linecap="round"/>
+  <path d="M566 208H622V208H648" stroke="#0B5C53" stroke-width="5" stroke-linecap="round"/>
+  <path d="M566 236H622" stroke="#0B5C53" stroke-width="5" stroke-linecap="round"/>
+  <path d="M566 264H622" stroke="#0B5C53" stroke-width="5" stroke-linecap="round"/>
+
+  <path d="M878 182H914" stroke="#6B7C93" stroke-width="4" stroke-linecap="round"/>
+  <path d="M878 306H914" stroke="#6B7C93" stroke-width="4" stroke-linecap="round"/>
+  <path d="M878 402H914" stroke="#6B7C93" stroke-width="4" stroke-linecap="round"/>
+  <path d="M878 512H914" stroke="#6B7C93" stroke-width="4" stroke-linecap="round"/>
+
+  <path d="M763 374V430V530" stroke="#0B5C53" stroke-width="5" stroke-linecap="round"/>
+  <path d="M1057 442V486V530" stroke="#6B7C93" stroke-width="4" stroke-linecap="round"/>
+  <path d="M1057 552V530" stroke="#6B7C93" stroke-width="4" stroke-linecap="round"/>
+
+  <text x="68" y="710" fill="#486581" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="500">
+    Принцип guardrails: LLM возвращает intent, query-сервис строит и валидирует SQL, выполнение идёт через read-only пользователя БД.
+  </text>
+</svg>

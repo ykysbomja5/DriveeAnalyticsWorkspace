@@ -1,0 +1,82 @@
+<svg width="1792" height="900" viewBox="0 0 1792 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="55" y1="39" x2="1723" y2="866" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0C1B2D"/>
+      <stop offset="0.57" stop-color="#0A2033"/>
+      <stop offset="1" stop-color="#0A4A52"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1272 434) rotate(90) scale(426 532)">
+      <stop stop-color="#77FFD6" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#77FFD6" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="panelShadow" x="1014" y="129" width="715" height="651" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feOffset dy="18"/>
+      <feGaussianBlur stdDeviation="22"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.018 0 0 0 0 0.083 0 0 0 0 0.104 0 0 0 0.28 0"/>
+    </filter>
+  </defs>
+
+  <rect width="1792" height="900" rx="32" fill="url(#bg)"/>
+  <rect width="1792" height="900" rx="32" fill="url(#glow)"/>
+
+  <circle cx="1591" cy="160" r="148" fill="#65D35F" fill-opacity="0.24"/>
+  <circle cx="1541" cy="740" r="226" fill="#0CC98B" fill-opacity="0.16"/>
+
+  <path d="M78 853C270 760 470 756 647 813C809 864 981 891 1167 837C1306 797 1423 759 1594 792" stroke="#9BC448" stroke-width="8" stroke-linecap="round" opacity="0.68"/>
+
+  <rect x="76" y="106" width="275" height="58" rx="29" fill="#2B3B4E"/>
+  <text x="176" y="141" fill="#F4F7FB" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Аналитика Drivee</text>
+
+  <text x="76" y="264" fill="#F5F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="72" font-weight="800">Самостоятельная аналитика</text>
+  <text x="76" y="401" fill="#F5F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="72" font-weight="800">для бизнес-запросов</text>
+  <text x="76" y="538" fill="#F5F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="72" font-weight="800">на русском языке</text>
+
+  <text x="80" y="618" fill="#B8C7DB" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="500">
+    Естественный язык → интент → защищённый SQL → PostgreSQL →
+  </text>
+  <text x="80" y="670" fill="#B8C7DB" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="500">
+    отчёты, шаблоны и объяснимость
+  </text>
+
+  <g>
+    <rect x="76" y="722" width="296" height="74" rx="37" fill="#D6FF32"/>
+    <text x="224" y="768" text-anchor="middle" fill="#0D1822" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="800">Go + PostgreSQL</text>
+  </g>
+  <g>
+    <rect x="390" y="722" width="284" height="74" rx="37" fill="#26374A" stroke="#405162"/>
+    <text x="532" y="768" text-anchor="middle" fill="#F3F6FA" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700">Qwen + guardrails</text>
+  </g>
+  <g>
+    <rect x="694" y="722" width="309" height="74" rx="37" fill="#26374A" stroke="#405162"/>
+    <text x="848.5" y="768" text-anchor="middle" fill="#F3F6FA" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700">Микросервисный MVP</text>
+  </g>
+
+  <g filter="url(#panelShadow)">
+    <rect x="1041" y="154" width="646" height="606" rx="39" fill="#FFFFFF" fill-opacity="0.11"/>
+    <rect x="1041.75" y="154.75" width="644.5" height="604.5" rx="38.25" stroke="#FFFFFF" stroke-opacity="0.38" stroke-width="1.5"/>
+  </g>
+
+  <rect x="1083" y="197" width="575" height="64" rx="23" fill="#FFFFFF" fill-opacity="0.12"/>
+  <rect x="1083.75" y="197.75" width="573.5" height="62.5" rx="22.25" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="1.5"/>
+  <text x="1105" y="238" fill="#F4F7FB" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700">Покажи выручку по городам за последние 30 дней</text>
+
+  <rect x="1080" y="320" width="570" height="180" rx="32" fill="#0C1B2D"/>
+  <text x="1112" y="368" fill="#D6FF32" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="800">Сводка запроса</text>
+  <text x="1118" y="425" fill="#F2F5FA" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="500">Метрика: выручка</text>
+  <text x="1118" y="481" fill="#F2F5FA" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="500">Группировка: город</text>
+  <text x="1118" y="537" fill="#F2F5FA" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="500">Период: последние 30 дней</text>
+
+  <rect x="1080" y="529" width="320" height="204" rx="28" fill="#F2F5FA"/>
+  <text x="1109" y="584" fill="#173D63" font-family="Segoe UI, Arial, sans-serif" font-size="31" font-weight="800">Тренд выручки</text>
+  <path d="M1122 694L1173 646L1228 660L1283 612L1338 627L1396 586" stroke="#1B6B61" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="1173" cy="646" r="10" fill="#D6FF32"/>
+  <circle cx="1228" cy="660" r="10" fill="#D6FF32"/>
+  <circle cx="1283" cy="612" r="10" fill="#D6FF32"/>
+  <circle cx="1396" cy="586" r="10" fill="#D6FF32"/>
+
+  <rect x="1416" y="529" width="233" height="204" rx="28" fill="#F2F5FA"/>
+  <text x="1450" y="584" fill="#173D63" font-family="Segoe UI, Arial, sans-serif" font-size="31" font-weight="800">Города</text>
+  <rect x="1473" y="638" width="32" height="65" rx="16" fill="#193757"/>
+  <rect x="1532" y="602" width="32" height="101" rx="16" fill="#D6FF32"/>
+  <rect x="1592" y="618" width="32" height="85" rx="16" fill="#21A89C"/>
+</svg>

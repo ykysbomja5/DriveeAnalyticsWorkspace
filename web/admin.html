@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drivee Admin</title>
+    <link rel="stylesheet" href="/styles.css?v=20260423c" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a href="/" class="brand-panel brand-link"><img src="/Logomain.svg?v=20260423b" alt="Drivee" class="brand-logo" /></a>
+        <nav class="sidebar-nav">
+          <a href="/" class="nav-item">Главная</a>
+          <a href="/chat.html" class="nav-item">Чаты</a>
+          <a href="/admin.html" class="nav-item active">Панель</a>
+        </nav>
+      </aside>
+      <main class="main-content">
+        <header class="topbar"><div><p class="section-kicker">Доступы</p><h1>Панель управления</h1></div></header>
+        <section class="admin-grid">
+          <article class="panel">
+            <div class="panel-head compact"><div><h3>Ожидают подтверждения</h3></div></div>
+            <div id="admin-pending" class="admin-list"></div>
+          </article>
+          <article class="panel">
+            <div class="panel-head compact"><div><h3>Пользователи</h3></div></div>
+            <div id="admin-users" class="admin-list"></div>
+          </article>
+          <article class="panel">
+            <div class="panel-head compact"><div><h3>Доступ к отделам</h3></div></div>
+            <form id="grant-form" class="admin-form">
+              <input id="grant-user-id" type="number" placeholder="ID пользователя" required />
+              <input id="grant-department" type="text" placeholder="Отдел" required />
+              <button class="primary" type="submit">Выдать доступ</button>
+            </form>
+            <div id="admin-access" class="admin-list"></div>
+            <div class="response-banner" id="admin-status">Root управляет ролями, начальник отдела выдает доступ к своему отделу.</div>
+          </article>
+        </section>
+      </main>
+    </div>
+    <script src="/auth-guard.js" defer></script>
+    <script src="/admin.js" defer></script>
+  </body>
+</html>

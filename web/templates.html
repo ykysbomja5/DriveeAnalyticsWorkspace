@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drivee Templates Archive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css?v=20260423c" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a href="/" class="brand-panel brand-link">
+          <img src="/Logomain.svg?v=20260423b" alt="Drivee" class="brand-logo" />
+          <p class="brand-caption">Analytics Workspace</p>
+        </a>
+
+        <nav class="sidebar-nav">
+          <a href="/glossary.html" class="nav-item">Словарь</a>
+          <a href="/templates.html" class="nav-item active">Шаблоны</a>
+          <a href="/reports.html" class="nav-item">Отчеты</a>
+        </nav>
+
+        <div class="sidebar-footnote">
+          <span class="sidebar-label">Архив шаблонов</span>
+          <strong>Сценарии и расписания</strong>
+          <p>Здесь собраны сохраненные шаблоны: личные, открытые и регулярные. </p>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="section-kicker">Шаблоны</p>
+            <h1>Архив сохраненных шаблонов</h1>
+            <p class="topbar-copy"></p>
+          </div>
+        </header>
+
+        <section class="results-layout lower">
+          <article class="panel">
+            <div class="panel-head compact">
+              <div>
+                <p class="section-kicker">Шаблон</p>
+                <h3>Создание и редактирование шаблона</h3>
+              </div>
+            </div>
+
+            <form class="template-form" id="template-form">
+              <input type="hidden" id="template-id" />
+              <div class="template-owner-grid">
+                <div>
+                  <label class="field-label" for="template-owner-name">Ваше имя</label>
+                  <input id="template-owner-name" type="text" placeholder="Например: Анна Смирнова" />
+                </div>
+                <div>
+                  <label class="field-label" for="template-owner-department">Отдел</label>
+                  <input id="template-owner-department" type="text" placeholder="Например: Финансы" />
+                </div>
+              </div>
+
+              <label class="field-label" for="template-name">Название шаблона</label>
+              <input id="template-name" type="text" placeholder="Например: Выручка по городам" />
+
+              <label class="field-label" for="template-description">Описание</label>
+              <input id="template-description" type="text" placeholder="Кратко: для чего нужен шаблон и кому он полезен" />
+
+              <label class="field-label" for="template-query">Текст шаблона</label>
+              <textarea id="template-query" rows="4" placeholder="Например: Покажи выручку по городам за последние 30 дней"></textarea>
+
+              <div class="schedule-card">
+                <label class="checkbox-line">
+                  <input type="checkbox" id="template-is-public" />
+                  <span>Сделать шаблон открытым для остальных пользователей</span>
+                </label>
+                <p class="helper-text">Публичные шаблоны видны коллегам и могут быть отфильтрованы по отделу.</p>
+              </div>
+
+              <div class="schedule-card">
+                <label class="checkbox-line">
+                  <input type="checkbox" id="template-schedule-enabled" />
+                  <span>Запускать регулярно и сразу сохранять отчет</span>
+                </label>
+
+                <div class="schedule-grid">
+                  <div>
+                    <label class="field-label" for="template-schedule-day">День недели</label>
+                    <select id="template-schedule-day">
+                      <option value="1">Понедельник</option>
+                      <option value="2">Вторник</option>
+                      <option value="3">Среда</option>
+                      <option value="4">Четверг</option>
+                      <option value="5">Пятница</option>
+                      <option value="6">Суббота</option>
+                      <option value="0">Воскресенье</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label class="field-label" for="template-schedule-time">Время запуска</label>
+                    <input id="template-schedule-time" type="time" value="13:00" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="button-row compact">
+                <button class="primary" type="submit" id="template-save-button">Сохранить шаблон</button>
+                <button class="ghost" type="button" id="template-cancel-button">Сбросить форму</button>
+              </div>
+            </form>
+
+            <div class="response-banner" id="templates-archive-status">Архив шаблонов готов. Можно запускать, редактировать и публиковать сценарии.</div>
+          </article>
+        </section>
+
+        <section class="archive-grid">
+          <article class="panel">
+            <div class="template-library-head">
+              <div>
+                <p class="section-kicker">Шаблоны</p>
+                <h3>Личные и открытые сценарии</h3>
+              </div>
+              <div class="template-filter-box">
+                <label class="field-label" for="shared-templates-department-filter">Отдел</label>
+                <select id="shared-templates-department-filter">
+                  <option value="">Все отделы</option>
+                </select>
+              </div>
+            </div>
+
+            <section class="template-section template-section-owned">
+              <div class="template-library-head shared">
+                <div>
+                  <p class="section-kicker">Мои шаблоны</p>
+                  <h4>Можно запускать, редактировать, публиковать и удалять</h4>
+                </div>
+              </div>
+              <div class="template-list" id="templates-page-list"></div>
+            </section>
+
+            <section class="template-section template-section-shared">
+              <div class="template-library-head shared">
+                <div>
+                  <p class="section-kicker">Открытые шаблоны</p>
+                  <h4>Сценарии коллег по отделам</h4>
+                </div>
+              </div>
+              <div class="template-list" id="shared-templates-page-list"></div>
+            </section>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="/auth-guard.js" defer></script>
+    <script src="/templates.js" defer></script>
+  </body>
+</html>

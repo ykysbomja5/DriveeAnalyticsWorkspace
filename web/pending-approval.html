@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drivee - Ожидание подтверждения</title>
+    <link rel="stylesheet" href="/styles.css?v=20260423c" />
+  </head>
+  <body class="auth-page">
+    <main class="auth-layout">
+      <section class="auth-panel">
+        <img src="/Logomain.svg?v=20260423b" alt="Drivee" class="auth-logo" />
+        <div class="pending-approval-container">
+          <div class="pending-icon">⏳</div>
+          <h1>Ожидайте подтверждения</h1>
+          <p class="pending-message">
+            Ваш аккаунт успешно создан, но еще не активирован. 
+            Пожалуйста, ожидайте, пока администратор выдаст вам доступ к использованию сервиса.
+          </p>
+          <div class="pending-info">
+            <p>После подтверждения вы сможете:</p>
+            <ul>
+              <li>Формулировать бизнес-запросы на естественном языке</li>
+              <li>Получать аналитические отчеты</li>
+              <li>Работать с чатами и сохраненными отчетами</li>
+            </ul>
+          </div>
+          <div class="pending-actions">
+            <button class="primary" type="button" id="check-status-button">Проверить статус</button>
+            <button type="button" id="back-to-login-button">Вернуться ко входу</button>
+          </div>
+          <div class="response-banner" id="pending-status"></div>
+        </div>
+      </section>
+    </main>
+    <script src="/pending-approval.js" defer></script>
+  </body>
+</html>
